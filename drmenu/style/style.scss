@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.help {
+    background: #ccc;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            &:hover {
+                color: black;
+                background: white;
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+                color: black;
+
+            }
+        }
+    }
+
+    .dr-home {
+        position: relative;
+
+        &:hover {
+            .dr-help {
+
+                display: block;
+            }
+
+        }
+
+
+        .dr-help {
+            position: absolute;
+            display: none;
+
+            ul {
+                flex-direction: column;
+                background: #ccc;
+
+            }
+
+
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    a{
+        display: inline-block;
+        text-decoration: none;
+        background: white;
+        color: black;
+        padding: 20px;
+        position: relative;
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            border-radius: 5px;
+            background: red;
+            transition: 1s;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
